@@ -18,6 +18,7 @@
 #define CTHASH_SIMPLE_HPP
 
 #include <utility>
+#include <cstdint>
 
 namespace cthash {
 
@@ -1185,6 +1186,7 @@ namespace literals {
 
 } // namespace cthash
 
+#ifdef __cpp_lib_formatters
 namespace std {
 
 template <size_t N, typename CharT>
@@ -1229,6 +1231,7 @@ struct std::formatter<cthash::tagged_hash_value<Tag, N>, CharT> {
 
 } // namespace std
 
+#endif // __cpp_lib_formatters
 #endif
 
 #ifndef CTHASH_INTERNAL_ASSERT_HPP

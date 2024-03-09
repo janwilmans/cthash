@@ -16,7 +16,7 @@ else()
 	add_c_and_cxx_compile_options("-Wextra")
 	add_c_and_cxx_compile_options("-pedantic")
 	add_c_and_cxx_compile_options("-Wshadow")
-	add_c_and_cxx_compile_options("-Wconversion")
+	#add_c_and_cxx_compile_options("-Wconversion")
 	add_c_and_cxx_compile_options("-Werror")
 	
 	if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")

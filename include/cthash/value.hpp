@@ -1,6 +1,8 @@
 #ifndef CTHASH_VALUE_HPP
 #define CTHASH_VALUE_HPP
 
+#include <cstdint>
+
 #include "encoding/base.hpp"
 #include "encoding/encodings.hpp"
 #include "internal/algorithm.hpp"
@@ -107,6 +109,7 @@ namespace literals {
 
 } // namespace cthash
 
+#ifdef __cpp_lib_formatters
 namespace std {
 
 template <size_t N, typename CharT>
@@ -150,5 +153,7 @@ struct std::formatter<cthash::tagged_hash_value<Tag, N>, CharT> {
 };
 
 } // namespace std
+
+#endif // __cpp_lib_formatters
 
 #endif

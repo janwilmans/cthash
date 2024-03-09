@@ -1,3 +1,5 @@
+#include <cstdint>
+
 #include <cthash/cthash.hpp>
 #include <iostream>
 

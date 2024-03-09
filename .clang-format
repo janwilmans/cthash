@@ -175,3 +175,4 @@ UseCRLF:         false
 UseTab:          Always
 WhitespaceSensitiveMacros: []
 
+SortIncludes: false
