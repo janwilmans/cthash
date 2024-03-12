@@ -2,6 +2,7 @@
 #define CTHASH_ENCODING_CONCEPTS_HPP
 
 #include <ranges>
+#include <cstdint>
 #include <concepts>
 
 namespace cthash {
