@@ -61,7 +61,7 @@ template <size_t N> struct hash_value: std::array<std::byte, N> {
 #else
 		auto result = std::basic_string<CharT>{};
 		result.resize(encoded.size());
-		auto [i, o] = std::ranges::copy(encoded.begin(), encoded.end(), result.begin());
+		[[maybe_unused]] auto [i, o] = std::ranges::copy(encoded.begin(), encoded.end(), result.begin());
 		assert(i == encoded.end());
 		assert(o == result.end());
 		return result;
